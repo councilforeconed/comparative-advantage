@@ -21,6 +21,21 @@ test('init divides workers between the two products', function () {
   equal(producer.get('productBResources'), 50);
 });
 
+test('has necessary properties', function () {
+  var producer = Producer.create({
+    name: 'United States',
+    products: ['wheat', 'cheese'],
+    ratio: [3, 12],
+    resources: 100,
+    unit: 'workers'
+  });
+  
+  ok(producer.get('productAResources'));
+  ok(producer.get('productBResources'));
+  ok(producer.get('productAProduction'));
+  ok(producer.get('productBProduction'));
+});
+
 test('adjusting resources in Product A updates Product B', function () {
   var producer = Producer.create({
     name: 'United States',
