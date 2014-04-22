@@ -8,19 +8,6 @@ test('existence of class', function () {
   ok(Producer);
 });
 
-test('init divides workers between the two products', function () {
-  var producer = Producer.create({
-    name: 'United States',
-    products: ['wheat', 'cheese'],
-    ratio: [3, 12],
-    resources: 100,
-    unit: 'workers'
-  });
-  
-  equal(producer.get('productAResources'), 50);
-  equal(producer.get('productBResources'), 50);
-});
-
 test('has necessary properties', function () {
   var producer = Producer.create({
     name: 'United States',
@@ -34,6 +21,19 @@ test('has necessary properties', function () {
   ok(producer.get('productBResources'));
   ok(producer.get('productAProduction'));
   ok(producer.get('productBProduction'));
+});
+
+test('init divides workers between the two products', function () {
+  var producer = Producer.create({
+    name: 'United States',
+    products: ['wheat', 'cheese'],
+    ratio: [3, 12],
+    resources: 100,
+    unit: 'workers'
+  });
+  
+  equal(producer.get('productAResources'), 50);
+  equal(producer.get('productBResources'), 50);
 });
 
 test('adjusting resources in Product A updates Product B', function () {
