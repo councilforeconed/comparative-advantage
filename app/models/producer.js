@@ -7,10 +7,14 @@ export default Ember.Object.extend({
   unit: 'workers',
   
   init: function () {
-    this.set('productARatio', this.get('ratio')[0]);
-    this.set('productBRatio', this.get('ratio')[1]);
-    this.set('productAResources', this.get('resources') / 2);
-    this.set('productBResources', this.get('resources') / 2);
+    this.setProperties({
+      productARatio: this.get('ratio')[0],
+      productBRatio: this.get('ratio')[1],
+      productAResources: this.get('resources') / 2,
+      productBResources: this.get('resources') / 2,
+      productAName: this.get('products')[0],
+      productBName: this.get('products')[1]
+    });
   },
   
   productAProduction: function () {
