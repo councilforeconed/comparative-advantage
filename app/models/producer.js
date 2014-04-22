@@ -1,6 +1,6 @@
 export default Ember.Object.extend({
   
-  name: null,
+  name: 'Factory X',
   products: ['Product A', 'Product B'],
   ratio: [1,1],
   resources: 100,
