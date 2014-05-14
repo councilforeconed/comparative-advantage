@@ -51,8 +51,10 @@ export default Ember.Route.extend({
       unit: 'workers'
     });
     
-    if (params.id == 1) return [nino, tony];
-    if (params.id == 2) return [ficticiousCountryA, ficticiousCountryB];
-    if (params.id == 3) return [unitedStates, france];
+    var activity = parseInt(params.id, 10);
+    
+    if (activity === 1) return [nino, tony];
+    if (activity === 2) return [ficticiousCountryA, ficticiousCountryB];
+    if (activity === 3) return [unitedStates, france];
   }
 });
