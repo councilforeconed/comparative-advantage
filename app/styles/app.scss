@@ -45,6 +45,30 @@ $lightBlue: rgb(182, 221, 211);
   margin-left: 10px;
 }
 
+.productA-global {
+  @include highlight-box-left;
+  background-color: $lightBlue;
+}
+
+.productB-global {
+  @include highlight-box-right;
+  background-color: $lightBlue;
+}
+
+.productA-total {
+  @include highlight-box-left;
+  background-color: $yellow;
+}
+
+.productB-total {
+  @include highlight-box-right;
+  background-color: $yellow;
+}
+
+.slider-visualization {
+  margin-top: 3rem;
+}
+
 .unit, .productA-production, .productB-production {
   h3 {
     font-size: 1.2rem;
@@ -77,30 +101,6 @@ $lightBlue: rgb(182, 221, 211);
     display: table;
     clear: both;
   }
-}
-
-.productA-global {
-  @include highlight-box-left;
-  background-color: $lightBlue;
-}
-
-.productB-global {
-  @include highlight-box-right;
-  background-color: $lightBlue;
-}
-
-.productA-total {
-  @include highlight-box-left;
-  background-color: $yellow;
-}
-
-.productB-total {
-  @include highlight-box-right;
-  background-color: $yellow;
-}
-
-.slider-visualization {
-  margin-top: 3rem;
 }
 
 .slider {
