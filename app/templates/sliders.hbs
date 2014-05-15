@@ -1,7 +1,18 @@
-<p>{{#link-to 'application'}}&larr; Home{{/link-to}}</p>
 
-{{capitalize-string productAName}}: {{totalProductionProductA}}
-{{capitalize-string productBName}}: {{totalProductionProductB}}
+<div class="global-production">
+  
+  <div class="productA-global">
+    <h3>{{capitalize-string productAName}}</h3>
+    <p>{{totalProductionProductA}}</p>
+  </div>
+
+  <div class="productB-global">
+    <h3>{{capitalize-string productBName}}</h3>
+    <p>{{totalProductionProductB}}</p>
+  </div>
+  
+</div>
+
 
 {{#each}}
     {{slider-visualization producer=this}}

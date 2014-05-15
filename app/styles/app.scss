@@ -1,0 +1,27 @@
+@import '../../vendor/rangeslider.js/dist/rangeslider.css';
+@import '../../vendor/normalize.css/normalize.css';
+
+$desktop-content-width: 748px;
+
+$yellow: rgb(248, 212, 58);
+$lightBlue: rgb(182, 221, 211);
+
+.content {
+  max-width: $desktop-content-width;
+  margin: auto;
+  padding: 10px;
+}
+
+.global-production {
+
+  & div {
+    display: inline-block;
+    width: 50%;
+    height: 100px;
+    text-align: center;
+    background-color: $lightBlue;
+    border-radius: 20px;
+  }
+
+}
+
