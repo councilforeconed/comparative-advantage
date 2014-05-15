@@ -1,28 +1,30 @@
 <h2 class="producer-name">{{producer.name}}</h2>
 
+<div class="unit">
+    <h3>{{capitalize-string producer.unit}}</h3>
+    <p>{{producer.resources}}</p>
+</div>
+
 <div class="total-production production">
     <div class="productA-total">
         <h3>{{capitalize-string producer.productAName}} Production</h3>
-        <p>{{producer.productAProduction}}</p>
+        <div class="total">{{producer.productAProduction}}</div>
     </div>
     <div class="productB-total">
         <h3>{{capitalize-string producer.productBName}} Production</h3>
-        <p>{{producer.productBProduction}}</p>
+        <div class="total">{{producer.productBProduction}}</div>
     </div>
 </div>
 
 <div class="resources">
-    <div class="unit">
-        <h3>{{capitalize-string producer.unit}}</h3>
-        <p>{{producer.resources}}</p>
-    </div>
     <div class="productA-production name">
         <h3>{{capitalize-string producer.productAName}}</h3>
         <p>{{producer.productAResources}}</p>
     </div>
-    <div class="slider">{{input type="range" max=producer.resources value=producer.productAResources}}</div>
     <div class="productB-production name">
         <h3>{{capitalize-string producer.productBName}}</h3>
         <p>{{producer.productBResources}}</p>
     </div>
 </div>
+
+<div class="slider">{{input type="range" max=producer.resources value=producer.productAResources}}</div>

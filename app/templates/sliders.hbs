@@ -1,18 +1,14 @@
-
-<div class="global-production">
-  
-  <div class="productA-global">
+<div class="global-production">  
+  <div class="productA-global global-product">
     <h3>{{capitalize-string productAName}}</h3>
-    <p>{{totalProductionProductA}}</p>
+    <div class="resource">{{totalProductionProductA}}</div>
   </div>
 
-  <div class="productB-global">
+  <div class="productB-global global-product">
     <h3>{{capitalize-string productBName}}</h3>
-    <p>{{totalProductionProductB}}</p>
+    <div class="resource">{{totalProductionProductB}}</div>
   </div>
-  
 </div>
-
 
 {{#each}}
     {{slider-visualization producer=this}}
