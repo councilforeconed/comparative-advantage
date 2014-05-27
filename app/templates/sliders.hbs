@@ -1,4 +1,4 @@
-<div class="global-production">  
+<div class="global-production">
   <div class="productA-global global-product">
     <h3>{{capitalize-string productAName}}</h3>
     <div class="resource">{{totalProductionProductA}}</div>
@@ -10,6 +10,6 @@
   </div>
 </div>
 
-{{#each}}
+{{#each producers}}
     {{slider-visualization producer=this}}
 {{/each}}

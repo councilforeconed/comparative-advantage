@@ -1,5 +1,9 @@
-<ul>
-    <li>{{#link-to 'sliders' 1}}Tony and Nino{{/link-to}}</li>
-    <li>{{#link-to 'sliders' 2}}Cell Phones and Microwaves{{/link-to}}</li>
-    <li>{{#link-to 'sliders' 3}}Cheese and Wheat{{/link-to}}</li>
-</ul>
+{{#each this}}
+  <div class="activity clearfix">
+    {{#link-to 'sliders' this}}<img {{bind-attr src=image}} class="activity-image left">{{/link-to}}
+    <div class="description right">
+      {{#link-to 'sliders' id}}<h2>{{title}}</h2>{{/link-to}}
+      <p>{{description}}</p>
+    </div>
+  </div>
+{{/each}}

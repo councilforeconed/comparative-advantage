@@ -1,0 +1,31 @@
+$link-color: rgb(29, 178, 212);
+
+.activity {
+  margin-bottom: 1rem;
+}
+
+.activity .description {
+  width: 520px;
+}
+
+.activity h2 {
+  font-weight: 400;
+  margin-top: 0;
+}
+
+.activity p {
+  font-weight: 300;
+}
+
+.activity a {
+  color: $link-color;
+  text-decoration: none;
+  &:hover {
+    color: lighten($link-color, 20);
+  }
+}
+
+.activity-image {
+  max-width: 200px;
+  max-height: 200px;
+}

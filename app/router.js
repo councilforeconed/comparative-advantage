@@ -1,9 +1,7 @@
-var Router = Ember.Router.extend(); // ensure we don't share routes between all Router instances
+var Router = Ember.Router.extend();
 
 Router.map(function() {
-  this.route('component-test');
-  this.route('helper-test');
-  this.route('sliders', { path: 'sliders/:id' });
+  this.route('sliders', { path: 'sliders/:slider_id' });
 });
 
 export default Router;
