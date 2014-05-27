@@ -1,30 +1,9 @@
 <h2 class="producer-name">{{producer.name}}</h2>
 
-<div class="unit">
-    <h3>{{capitalize-string producer.unit}}</h3>
-    <p>{{producer.resources}}</p>
-</div>
+<p><span class="highlight">{{producer.name}}</span> has <span>{{producer.resources}} {{producer.unit}}</span>. These resources can be used to make either <span class="highlight">{{producer.productAName}}</span> or <span class="highlight">{{producer.productBName}}</span>.</p>
 
-<div class="total-production production">
-    <div class="productA-total">
-        <h3>{{capitalize-string producer.productAName}} Production</h3>
-        <div class="total">{{producer.productAProduction}}</div>
-    </div>
-    <div class="productB-total">
-        <h3>{{capitalize-string producer.productBName}} Production</h3>
-        <div class="total">{{producer.productBProduction}}</div>
-    </div>
-</div>
+{{range-slider producer=producer}}
 
-<div class="resources">
-    <div class="productA-production name">
-        <h3>{{capitalize-string producer.productAName}}</h3>
-        <p>{{producer.productAResources}}</p>
-    </div>
-    <div class="productB-production name">
-        <h3>{{capitalize-string producer.productBName}}</h3>
-        <p>{{producer.productBResources}}</p>
-    </div>
-</div>
+<p><span class="highlight">{{producer.name}}</span> is currently allocating <span class="highlight">{{producer.productAResources}} {{producer.unit}}</span> to the production of <span class="highlight">{{producer.productAName}}</span> and <span class="highlight">{{producer.productBResources}} {{producer.unit}}</span> to the production of <span class="highlight">{{producer.productBName}}</span>.</p>
 
-<div class="slider">{{input type="range" max=producer.resources value=producer.productAResources}}</div>
+<p>As a result, the country's <span class="highlight">{{producer.productAName}}</span> production is <span class="highlight">{{producer.productAProduction}}</span> and its <span class="highlight">{{producer.productBName}}</span> production is <span class="highlight">{{producer.productBProduction}}</span>.

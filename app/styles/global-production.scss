@@ -1,0 +1,27 @@
+@import 'colors';
+
+.global-production {
+  color: white;
+  font-size: 5rem;
+  background-color: $lightBlue;
+  padding: 0.5rem 0;
+  & img {
+    max-height: 150px;
+    vertical-align: middle;
+  }
+  @media screen and (max-width: 1024px) {
+    font-size: 3rem;
+    & img {
+      max-height: 100px;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    & img {
+      max-height: 75px;
+    }
+  }
+}
+
+.resource {
+  text-align: center;
+}

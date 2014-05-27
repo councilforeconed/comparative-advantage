@@ -22,6 +22,14 @@ export default Ember.ObjectController.extend({
     return this.get('producers').map(function(producer) {
       return producer.get('productBName');
     })[0];
-  }.property('producers.@each.productBName')
+  }.property('producers.@each.productBName'),
+
+  producerA: function () {
+    return this.get('producers')[0];
+  }.property('producers.[]'),
+
+  producerB: function () {
+    return this.get('producers')[1];
+  }.property('producers.[]')
 
 });

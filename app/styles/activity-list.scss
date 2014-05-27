@@ -1,11 +1,15 @@
 $link-color: rgb(29, 178, 212);
 
-.activity {
-  margin-bottom: 1rem;
+.activity-list {
+  margin-top: 3rem;
+  max-width: 80%;
+  @media screen and (max-width: 768px) {
+    font-size: 0.8em;
+  }
 }
 
-.activity .description {
-  width: 520px;
+.activity {
+  margin-bottom: 4rem;
 }
 
 .activity h2 {
@@ -27,5 +31,8 @@ $link-color: rgb(29, 178, 212);
 
 .activity-image {
   max-width: 200px;
-  max-height: 200px;
+  margin: 0 1.5rem 0 0;
+  @media screen and (max-width: 480px) {
+    max-width: 140px;
+  }
 }

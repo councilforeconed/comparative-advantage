@@ -1,0 +1,30 @@
+@import 'colors';
+
+.slider-visualization {
+  font-size: 1.3em;
+  line-height: 1.8em;
+}
+
+.slider-visualization h2 {
+  color: $darkBlue;
+}
+
+.slider-visualization .highlight {
+  color: $cobalt;
+  font-weight: 400;
+}
+
+.slider {
+  padding: 2rem 0;
+  font-size: 1rem;
+  & .right {
+    text-align: right;
+  }
+  & .left {
+    text-align: left;
+  }
+}
+
+input[type=range] {
+  width: 100%;
+}

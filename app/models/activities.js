@@ -54,6 +54,8 @@ var Activities = [
     title: 'Tony and Nino',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porttitor sodales est, porttitor bibendum risus sagittis eleifend. Phasellus quam sapien, ultrices tempus orci vel, cursus aliquet arcu. Etiam id lacus sit amet lorem malesuada interdum congue quis lacus. Integer justo velit, luctus id orci eget, tincidunt pharetra lorem. Ut molestie.',
     image: 'assets/images/pizza-and-salad.png',
+    productAImage: 'assets/images/pizza.png',
+    productBImage: 'assets/images/salad.png',
     producers: [tony, nino]
   },
   {
@@ -61,6 +63,8 @@ var Activities = [
     title: 'Cell Phones and Microwaves',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porttitor sodales est, porttitor bibendum risus sagittis eleifend. Phasellus quam sapien, ultrices tempus orci vel, cursus aliquet arcu. Etiam id lacus sit amet lorem malesuada interdum congue quis lacus. Integer justo velit, luctus id orci eget, tincidunt pharetra lorem. Ut molestie.',
     image: 'assets/images/phone-and-microwave.png',
+    productAImage: 'assets/images/phone.png',
+    productBImage: 'assets/images/microwave.png',
     producers: [ficticiousCountryA, ficticiousCountryB]
   },
   {
@@ -68,6 +72,8 @@ var Activities = [
     title: 'Cheese and Wheat',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porttitor sodales est, porttitor bibendum risus sagittis eleifend. Phasellus quam sapien, ultrices tempus orci vel, cursus aliquet arcu. Etiam id lacus sit amet lorem malesuada interdum congue quis lacus. Integer justo velit, luctus id orci eget, tincidunt pharetra lorem. Ut molestie.',
     image: 'assets/images/wheat-and-cheese.png',
+    productAImage: 'assets/images/cheese.png',
+    productBImage: 'assets/images/wheat.png',
     producers: [unitedStates, france]
   }
 ];

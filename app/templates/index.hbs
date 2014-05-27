@@ -1,9 +1,11 @@
+<div class="activity-list container">
 {{#each this}}
   <div class="activity clearfix">
     {{#link-to 'sliders' this}}<img {{bind-attr src=image}} class="activity-image left">{{/link-to}}
-    <div class="description right">
+    <div class="description">
       {{#link-to 'sliders' id}}<h2>{{title}}</h2>{{/link-to}}
       <p>{{description}}</p>
     </div>
   </div>
 {{/each}}
+</div>

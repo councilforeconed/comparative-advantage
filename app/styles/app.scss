@@ -1,122 +1,15 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700,300);
-@import '../../vendor/rangeslider.js/dist/rangeslider.css';
-@import '../../vendor/normalize.css/normalize.css';
+@import '../../vendor/skeleton-sass/sass/skeleton';
+@import '../../vendor/open-sans-fontface/open-sans';
 
-@import 'header.scss';
-@import 'alignment.scss';
-@import 'activity-list.scss';
-
-*,
-*:before,
-*:after {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
+@import 'colors';
+@import 'typography';
+@import 'header';
+@import 'alignment';
+@import 'activity-list';
+@import 'global-production';
+@import 'slider-visualization';
 
 body {
   font-family: 'Open Sans', sans-serif;
-}
-
-$desktop-content-width: 748px;
-
-$yellow: rgb(248, 212, 58);
-$lightBlue: rgb(182, 221, 211);
-
-.content {
-  max-width: $desktop-content-width;
-  margin: 4rem auto;
-}
-
-@mixin highlight-box {
-  width: ($desktop-content-width / 2) - 10;
-  text-align: center;
-  h3 {
-    font-weight: normal;
-    margin: 2rem 0 0 0;
-  }
-  .resource {
-    margin-bottom: 2rem;
-    font-size: 5rem;
-  }
-  .total {
-    margin-bottom: 2rem;
-    font-size: 3rem;
-  }
-}
-
-@mixin highlight-box-left {
-  @include highlight-box;
-  float: left;
-  margin-right: 10px;
-}
-
-@mixin highlight-box-right {
-  @include highlight-box;
-  float: right;
-  margin-left: 10px;
-}
-
-.productA-global {
-  @include highlight-box-left;
-  background-color: $lightBlue;
-}
-
-.productB-global {
-  @include highlight-box-right;
-  background-color: $lightBlue;
-}
-
-.productA-total {
-  @include highlight-box-left;
-  background-color: $yellow;
-}
-
-.productB-total {
-  @include highlight-box-right;
-  background-color: $yellow;
-}
-
-.slider-visualization {
-  margin-top: 3rem;
-}
-
-.unit, .productA-production, .productB-production {
-  h3 {
-    font-size: 1.2rem;
-    display: inline-block;
-    margin-right: 1rem;
-  }
-  p {
-    font-size: 1.2rem;
-    display: inline-block;
-  }
-}
-
-.productA-production {
-  width: ($desktop-content-width / 2);
-  float: left;
-  text-align: left;
-}
-
-.productB-production {
-  width: ($desktop-content-width / 2);
-  float: right;
-  text-align: right;
-}
-
-.global-production, .total-production, .resources {
-  width: $desktop-content-width;
-  margin: 0 auto;
-  &:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-}
-
-.slider {
-  input {
-    width: 100%;
-  }
+  margin: 0 0 5rem 0;
 }
