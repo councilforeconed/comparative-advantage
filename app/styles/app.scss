@@ -2,6 +2,17 @@
 @import '../../vendor/rangeslider.js/dist/rangeslider.css';
 @import '../../vendor/normalize.css/normalize.css';
 
+@import 'header.scss';
+@import 'alignment.scss';
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
 }
@@ -13,7 +24,7 @@ $lightBlue: rgb(182, 221, 211);
 
 .content {
   max-width: $desktop-content-width;
-  margin: auto;
+  margin: 4rem auto;
 }
 
 @mixin highlight-box {
