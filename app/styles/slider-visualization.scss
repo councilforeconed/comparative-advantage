@@ -29,16 +29,20 @@
   margin: 3rem 0 4rem 0;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 768px) {
+  .slider-visualization {
+    font-size: 1em;
+    line-height: 1.6em;
+  }
   .slider {
     width: 95%;
     margin: auto;
   }
+}
+
+@media screen and (max-width: 568px) {
   .adjustment {
     position: relative;
-  }
-  .slider-visualization .label {
-    font-size: 0.7em;
   }
   .slider-visualization .label.left {
     position: absolute;
@@ -49,5 +53,11 @@
     position: absolute;
     top: 1.2em;
     right: 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .slider-visualization .label {
+    font-size: 0.8rem;
   }
 }
