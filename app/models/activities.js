@@ -2,7 +2,7 @@ import Producer from 'appkit/models/producer';
 
 var nino = Producer.create({
   name: 'Nino',
-  products: ['pizzas', 'salads'],
+  products: ['pizza', 'salads'],
   ratio: [1, 4],
   resources: 6,
   unit: 'cooking sessions'
@@ -10,7 +10,7 @@ var nino = Producer.create({
 
 var tony = Producer.create({
   name: 'Tony',
-  products: ['pizzas', 'salads'],
+  products: ['pizza', 'salads'],
   ratio: [1, 2],
   resources: 6,
   unit: 'cooking sessions'
