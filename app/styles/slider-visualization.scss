@@ -14,17 +14,17 @@
   font-weight: 400;
 }
 
-.slider {
-  padding: 2rem 0;
-  font-size: 1rem;
-  & .right {
-    text-align: right;
-  }
-  & .left {
-    text-align: left;
-  }
+.slider-visualization .label {
+  font-size: 0.8em;
 }
 
-input[type=range] {
-  width: 100%;
+.slider-visualization .label.right {
+  text-align: right;
+}
+.slider-visualization .label.left {
+  text-align: left;
+}
+
+.adjustment {
+  margin: 3rem 0 4rem 0;
 }

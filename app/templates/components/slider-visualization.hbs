@@ -2,7 +2,18 @@
 
 <p><span class="highlight">{{producer.name}}</span> has <span>{{producer.resources}} {{producer.unit}}</span>. These resources can be used to make either <span class="highlight">{{producer.productAName}}</span> or <span class="highlight">{{producer.productBName}}</span>.</p>
 
-{{range-slider producer=producer}}
+<p>{{capitalize-string producer.unit}} can produce either {{producer.productARatio}} {{producer.productAName}} or {{producer.productBRatio}} {{producer.productBName}}.</p>
+
+<div class="adjustment">
+  {{range-slider max=producer.resources value=producer.productAResources}}
+
+  <div class="eight columns label left">
+    {{capitalize-string producer.productAName}} ({{producer.productAResources}})
+  </div>
+  <div class="eight columns label right">
+    {{capitalize-string producer.productBName}} ({{producer.productBResources}})
+  </div>
+</div>
 
 <p><span class="highlight">{{producer.name}}</span> is currently allocating <span class="highlight">{{producer.productAResources}} {{producer.unit}}</span> to the production of <span class="highlight">{{producer.productAName}}</span> and <span class="highlight">{{producer.productBResources}} {{producer.unit}}</span> to the production of <span class="highlight">{{producer.productBName}}</span>.</p>
 

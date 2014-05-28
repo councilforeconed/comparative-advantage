@@ -5,7 +5,7 @@ var nino = Producer.create({
   products: ['pizzas', 'salads'],
   ratio: [1, 4],
   resources: 6,
-  unit: 'pizzas'
+  unit: 'cooking sessions'
 });
 
 var tony = Producer.create({
@@ -13,7 +13,7 @@ var tony = Producer.create({
   products: ['pizzas', 'salads'],
   ratio: [1, 2],
   resources: 6,
-  unit: 'pizzas'
+  unit: 'cooking sessions'
 });
 
 var ficticiousCountryA = Producer.create({
@@ -34,7 +34,7 @@ var ficticiousCountryB = Producer.create({
 
 var unitedStates = Producer.create({
   name: 'United States',
-  products: ['wheat', 'cheese'],
+  products: ['bushels of wheat', 'hunks of cheese'],
   ratio: [3, 12],
   resources: 100,
   unit: 'workers'
@@ -42,7 +42,7 @@ var unitedStates = Producer.create({
 
 var france = Producer.create({
   name: 'France',
-  products: ['wheat', 'cheese'],
+  products: ['bushels of wheat', 'hunks of cheese'],
   ratio: [2, 4],
   resources: 100,
   unit: 'workers'
