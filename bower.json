@@ -13,6 +13,7 @@
     "ember-load-initializers": "git://github.com/stefanpenner/ember-load-initializers.git#0.0.1",
     "skeleton-sass": "~1.6.3",
     "open-sans-fontface": "~1.0.4",
-    "jquery-ui": "~1.10.4"
+    "jquery-ui": "~1.10.4",
+    "jquery-ui-touch-punch-working": "*"
   }
 }
