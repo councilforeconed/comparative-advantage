@@ -12,6 +12,9 @@
 .slider-visualization .highlight {
   color: $cobalt;
   font-weight: 400;
+  &:hover {
+    background-color: darken($pale, 10);
+  }
 }
 
 .slider-visualization .label {

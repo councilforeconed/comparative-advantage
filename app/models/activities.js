@@ -34,7 +34,7 @@ var ficticiousCountryB = Producer.create({
 
 var unitedStates = Producer.create({
   name: 'United States',
-  products: ['bushels of wheat', 'hunks of cheese'],
+  products: ['bushels of wheat', 'pounds of cheese'],
   ratio: [3, 12],
   resources: 100,
   unit: 'workers'
@@ -42,7 +42,7 @@ var unitedStates = Producer.create({
 
 var france = Producer.create({
   name: 'France',
-  products: ['bushels of wheat', 'hunks of cheese'],
+  products: ['bushels of wheat', 'pounds of cheese'],
   ratio: [2, 4],
   resources: 100,
   unit: 'workers'

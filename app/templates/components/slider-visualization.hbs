@@ -2,7 +2,7 @@
 
 <p><span class="highlight">{{producer.name}}</span> has <span>{{producer.resources}} {{producer.unit}}</span>. These resources can be used to make either <span class="highlight">{{producer.productAName}}</span> or <span class="highlight">{{producer.productBName}}</span>.</p>
 
-<p>{{capitalize-string producer.unit}} can produce either {{producer.productARatio}} {{producer.productAName}} or {{producer.productBRatio}} {{producer.productBName}}.</p>
+<p><span class="highlight">{{capitalize-string producer.unit}}</span> can produce either <span class="highlight">{{producer.productARatio}} {{producer.productAName}}</span> or <span class="highlight">{{producer.productBRatio}} {{producer.productBName}}</span>.</p>
 
 <div class="adjustment">
   {{range-slider max=producer.resources value=producer.productAResources}}
