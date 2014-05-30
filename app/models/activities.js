@@ -52,7 +52,7 @@ var Activities = [
   {
     id: '1',
     title: 'Tony and Nino',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porttitor sodales est, porttitor bibendum risus sagittis eleifend. Phasellus quam sapien, ultrices tempus orci vel, cursus aliquet arcu. Etiam id lacus sit amet lorem malesuada interdum congue quis lacus. Integer justo velit, luctus id orci eget, tincidunt pharetra lorem. Ut molestie.',
+    description: 'Nino owns a pizza shop. He is very good at what he does. In one hour, he can make 9 pizzas or prepare 36 salads. His business is growing and he needs to hire someone to help prepare pizzas and salads. Tony has applied for the job and seems like a reliable individual. In one hour, Tony can make 6 pizzas or prepare 12 salads. Nino plans to hire Tony. Because Nino can make more pizzas in an hour and prepare more salads in an hour than Tony, he has a dilemma. Should he have Tony make pizzas or prepare salads?',
     image: 'assets/images/pizza-and-salad.png',
     productAImage: 'assets/images/pizza.png',
     productBImage: 'assets/images/salad.png',
@@ -61,7 +61,7 @@ var Activities = [
   {
     id: '2',
     title: 'Cell Phones and Microwaves',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porttitor sodales est, porttitor bibendum risus sagittis eleifend. Phasellus quam sapien, ultrices tempus orci vel, cursus aliquet arcu. Etiam id lacus sit amet lorem malesuada interdum congue quis lacus. Integer justo velit, luctus id orci eget, tincidunt pharetra lorem. Ut molestie.',
+    description: 'Apply the principle of comparative advantage to determine if two countries that produce cellphones and microwave ovens should specialize and trade. When a worker in a country can produce more of a good than a worker in another coun- try, the worker in the first country has an absolute advantage in producing that good. Which country’s workers have an absolute advantage in cellphones and microwave ovens?',
     image: 'assets/images/phone-and-microwave.png',
     productAImage: 'assets/images/phone.png',
     productBImage: 'assets/images/microwave.png',
@@ -70,7 +70,7 @@ var Activities = [
   {
     id: '3',
     title: 'Cheese and Wheat',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porttitor sodales est, porttitor bibendum risus sagittis eleifend. Phasellus quam sapien, ultrices tempus orci vel, cursus aliquet arcu. Etiam id lacus sit amet lorem malesuada interdum congue quis lacus. Integer justo velit, luctus id orci eget, tincidunt pharetra lorem. Ut molestie.',
+    description: 'The United States and France produce many goods, including cheese and wheat. Which country has a comparative advantage in the production of wheat? If the United States decides to put all of its workers into the production of wheat, how many pounds of cheese would be lost? If France decides to put all of its workers into the production of cheese, how many additional pounds of cheese would be produced?',
     image: 'assets/images/wheat-and-cheese.png',
     productAImage: 'assets/images/cheese.png',
     productBImage: 'assets/images/wheat.png',
